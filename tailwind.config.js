@@ -8,11 +8,13 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        tall: 'linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.9)), url("~/public/bg-vertical.jpg");',
+        wide: 'linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.9)), url("~/public/bg-horizontal.jpg");',
+      },
+      container: {
+        center: true,
       },
     },
   },
   plugins: [],
-}
+};

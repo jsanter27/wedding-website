@@ -1,4 +1,10 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
 
-module.exports = nextConfig
+const withNextIntl = require('next-intl/plugin')('./src/i18n.ts');
+
+const nextConfig = {};
+
+module.exports = withNextIntl({
+  ...nextConfig,
+  experimental: { appDir: true },
+});

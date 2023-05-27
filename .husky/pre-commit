@@ -1,0 +1,47 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+echo "\nValidating style..."
+
+# Check Prettier standards
+npm run check-format ||
+(
+    echo "Style Failed ❌\n"
+    false;
+)
+
+echo "Style Passed ✅\n\n"
+
+echo "Validating lint..."
+
+# Check ESLint Standards
+npm run check-lint ||
+(
+    echo "Lint Failed ❌\n"
+    false;
+)
+
+echo "Lint Passed ✅\n\n"
+
+echo "Validating types..."
+
+# Check tsconfig standards
+npm run check-types ||
+(
+    echo "Types Failed ❌\n"
+    false;
+)
+
+echo "Types Passed ✅\n\n"
+
+# If everything passes... Now we can commit
+echo "Running build..."
+
+npm run build ||
+(
+    echo "Build Failed ❌\n"
+    false;
+)
+
+# If everything passes... Now we can commit
+echo "Build Passed ✅\n"
