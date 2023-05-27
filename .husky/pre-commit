@@ -6,11 +6,11 @@ echo "\nValidating style..."
 # Check Prettier standards
 npm run check-format ||
 (
-    echo "Style Failed ❌\n"
+    echo "\nStyle Failed ❌\n"
     false;
 )
 
-echo "Style Passed ✅\n\n"
+echo "\nStyle Passed ✅\n\n"
 
 echo "Validating lint..."
 
