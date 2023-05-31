@@ -3,6 +3,12 @@
     "names": "Olga & Justin",
     "welcomeMessage": "We are getting married!",
     "weddingDate": "May 10th, 2024",
-    "weddingLocation": "Saugerties, NY"
+    "weddingLocation": "Saugerties, NY",
+    "rsvp": "RSVP"
+  },
+  "Navbar": {
+    "faq": "FAQ",
+    "additionalEvents": "Events",
+    "travel": "Travel"
   }
 }

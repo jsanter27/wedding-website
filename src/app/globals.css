@@ -13,5 +13,5 @@ div {
 }
 
 h1 {
-  @apply text-5xl md:text-7xl;
+  @apply text-4xl md:text-7xl;
 }

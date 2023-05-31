@@ -1,8 +1,14 @@
 {
   "Home": {
-    "names": "Ольга і Джастін",
-    "welcomeMessage": "Ми одружуємося!",
-    "weddingDate": "10 травня 2024 р",
-    "weddingLocation": "Saugerties, NY"
+    "names": "ОЛЬГА І ДЖАСТІН",
+    "welcomeMessage": "МИ ОДРУЖУЄМОСЯ!",
+    "weddingDate": "10 ТРАВНЯ 2024 Р",
+    "weddingLocation": "Saugerties, NY",
+    "rsvp": "ВІДПОВІСТИ"
+  },
+  "Navbar": {
+    "faq": "ВІДПОВІДІ",
+    "additionalEvents": "ПОДІЙ",
+    "travel": "ПОДОРОЖІ"
   }
 }

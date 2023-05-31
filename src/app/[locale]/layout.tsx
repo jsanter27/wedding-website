@@ -1,3 +1,4 @@
+import Navbar from '@/components/Navbar';
 import '../globals.css';
 import { useLocale } from 'next-intl';
 import { notFound } from 'next/navigation';
@@ -26,6 +27,7 @@ export default async function LocaleLayout({
   return (
     <html className="h-full" lang={locale}>
       <body className="h-full bg-center bg-no-repeat bg-cover bg-tall md:bg-wide">
+        <Navbar />
         <div className="container h-full">{children}</div>
       </body>
     </html>
