@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const withMT = require('@material-tailwind/react/utils/withMT');
 const Color = require('color');
 const lighten = (clr, val) => Color(clr).lighten(val).rgb().string();
 const darken = (clr, val) => Color(clr).darken(val).rgb().string();
@@ -20,7 +21,7 @@ for (const [name, color] of Object.entries(THEME_COLORS)) {
   PROCESSED_THEME_COLORS[`${name}-darker`] = darken(color, 0.2);
 }
 
-module.exports = {
+module.exports = withMT({
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -36,16 +37,7 @@ module.exports = {
         center: true,
       },
       colors: PROCESSED_THEME_COLORS,
-      keyframes: {
-        wiggle: {
-          '0%, 100%': { transform: 'rotate(-3deg)' },
-          '50%': { transform: 'rotate(3deg)' },
-        },
-      },
-      animation: {
-        wiggle: 'wiggle 200ms ease-in-out',
-      },
     },
   },
   plugins: [],
-};
+});

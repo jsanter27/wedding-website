@@ -7,11 +7,3 @@ body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
     'Lucida Sans', Arial, sans-serif;
 }
-
-div {
-  @apply text-lg md:text-2xl;
-}
-
-h1 {
-  @apply text-4xl md:text-7xl;
-}

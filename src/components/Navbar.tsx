@@ -1,72 +1,91 @@
-import { useTranslations } from 'next-intl';
-import Image from 'next/image';
-import Bars from '@heroicons/react/24/outline/Bars3Icon';
+'use client';
+import { useEffect, useState } from 'react';
+import {
+  Navbar as MaterialNavbar,
+  MobileNav,
+  Typography,
+  IconButton,
+} from '@material-tailwind/react';
 import Link from 'next/link';
 
-type NavItemProp = { text: string; link: string };
+export type NavItems = Array<{ text: string; link: string }>;
 
-function NavLogo() {
-  return (
-    <Link href="/">
-      <Image
-        width="0"
-        height="0"
-        className="w-auto pointer-events-none h-9"
-        src="logo.png"
-        alt="O&J"
-      />
-    </Link>
-  );
-}
+export default function Navbar({ items }: { items: NavItems }) {
+  const [open, setOpen] = useState(false);
 
-function MenuButton() {
-  return <Bars strokeWidth={2.5} className="w-auto h-6 ml-auto md:hidden" />;
-}
+  useEffect(() => {
+    window.addEventListener(
+      'resize',
+      () => window.innerWidth >= 600 && setOpen(false)
+    );
+  }, []);
 
-function NavItem({ text, link }: NavItemProp) {
-  return (
-    <Link
-      className="text-base md:text-lg w-fit hover:brightness-50"
-      href={link}
-    >
-      {text}
-    </Link>
-  );
-}
-
-function NavMenu() {
-  const t = useTranslations('Navbar');
-
-  const items: Array<NavItemProp> = [
-    {
-      text: t('faq'),
-      link: '/faq',
-    },
-    {
-      text: t('additionalEvents'),
-      link: '/events',
-    },
-    {
-      text: t('travel'),
-      link: '/travel',
-    },
-  ];
-  return (
-    <nav className="flex flex-row gap-[inherit]">
-      {items.map(({ text, link }, idx) => (
-        <NavItem key={idx} text={text} link={link} />
+  const navItems = (
+    <ul className="flex flex-col gap-2 pt-2 pb-4 lg:pb-0 lg:pt-0 lg:flex-row lg:items-center lg:gap-6">
+      {items.map((item, idx) => (
+        <Link
+          key={`nav-item-${idx}`}
+          href={item.link}
+          className="hover:text-palette-1-darker"
+        >
+          <Typography as="li" variant="lead" className="flex items-center">
+            {item.text}
+          </Typography>
+        </Link>
       ))}
-    </nav>
+    </ul>
   );
-}
 
-export default function Navbar() {
   return (
-    <header className="fixed top-0 flex flex-col w-full overflow-hidden shadow-sm bg-gradient-to-br from-palette-2-lighter to-palette-2-darker text-palette-7">
-      <div className="flex flex-row items-center w-full h-10 gap-4 pl-4 pr-4 text-palette-7">
-        <NavLogo />
-        <NavMenu />
+    <MaterialNavbar className="fixed z-10 w-full px-2 py-0 border-none rounded-none max-w-none min-h-11 bg-gradient-to-br from-palette-6-lighter to-palette-6-darker lg:px-4">
+      <div className="flex items-center justify-between h-full">
+        <Link href="/">
+          <Typography as="div" variant="h3" className="mr-4 cursor-pointer">
+            O&amp;J
+          </Typography>
+        </Link>
+        <div className="flex items-center gap-4">
+          <div className="hidden mr-4 lg:block">{navItems}</div>
+          <IconButton
+            variant="text"
+            className="w-6 h-6 ml-auto text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
+            ripple={false}
+            onClick={() => setOpen(!open)}
+          >
+            {open ? (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                className="w-6 h-6"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            ) : (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            )}
+          </IconButton>
+        </div>
       </div>
-    </header>
+      <MobileNav open={open}>{navItems}</MobileNav>
+    </MaterialNavbar>
   );
 }

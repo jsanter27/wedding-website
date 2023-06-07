@@ -1,6 +1,6 @@
-import Navbar from '@/components/Navbar';
+import Navbar, { NavItems } from '@/components/Navbar';
 import '../globals.css';
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { notFound } from 'next/navigation';
 import React from 'react';
 
@@ -10,7 +10,7 @@ export const metadata = {
     'Central hub for information regarding the wedding of Olga Avram and Justin Santer',
 };
 
-export default async function LocaleLayout({
+export default function LocaleLayout({
   children,
   params,
 }: {
@@ -24,10 +24,27 @@ export default async function LocaleLayout({
     notFound();
   }
 
+  const t = useTranslations('Navbar');
+
+  const items: NavItems = [
+    {
+      text: t('faq'),
+      link: '/faq',
+    },
+    {
+      text: t('additionalEvents'),
+      link: '/events',
+    },
+    {
+      text: t('travel'),
+      link: '/travel',
+    },
+  ];
+
   return (
     <html className="h-full" lang={locale}>
       <body className="h-full bg-center bg-no-repeat bg-cover bg-tall md:bg-wide">
-        <Navbar />
+        <Navbar items={items} />
         <div className="container h-full">{children}</div>
       </body>
     </html>
