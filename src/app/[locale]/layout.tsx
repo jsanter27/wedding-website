@@ -28,16 +28,24 @@ export default function LocaleLayout({
 
   const items: NavItems = [
     {
-      text: t('faq'),
-      link: '/faq',
+      text: t('aboutUs'),
+      link: '/about',
     },
     {
-      text: t('additionalEvents'),
-      link: '/events',
+      text: t('itinerary'),
+      link: '/itinerary',
+    },
+    {
+      text: t('rsvp'),
+      link: '/rsvp',
     },
     {
       text: t('travel'),
       link: '/travel',
+    },
+    {
+      text: t('faq'),
+      link: '/faq',
     },
   ];
 

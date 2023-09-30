@@ -7,9 +7,41 @@
     "rsvp": "RSVP"
   },
   "Navbar": {
-    "faq": "FAQ",
-    "additionalEvents": "Events",
-    "travel": "Travel"
+    "aboutUs": "About Us",
+    "itinerary": "Itinerary",
+    "rsvp": "RSVP",
+    "travel": "Travel",
+    "faq": "FAQ"
   },
-  "FAQ": {}
+  "FAQ": {
+    "frequently-asked-questions": "Frequently Asked Questions",
+    "faq-arrival-time-question": "What time should I arrive at the ceremony?",
+    "faq-arrival-time-answer": "You may arrive as early as X, and the ceremony will start at 5:30 PM.",
+    "faq-dress-code-question": "What is the dress code?",
+    "faq-dress-code-answer": "We kindly request all our guests to dress in cocktail attire for our special day. We want everyone to feel comfortable and enjoy the festivities, so please feel free to express your cultural and fashion preferences.",
+    "faq-indoors-outdoors-question": "Will the ceremony, cocktail hour, and reception take place indoors or outdoors?",
+    "faq-indoors-outdoors-answer": "With weather permitting, the ceremony will be outdoors, and the rest of the events indoors. If it rains we will have the ceremony, cocktail hour and reception indoors.",
+    "faq-timeline-question": "What will your wedding-day timeline look like?",
+    "faq-timeline-answer": "<ul><li>5:30 PM - 6:00 PM: Ceremony</li><li>6:00 PM - 7:00 PM: Cocktail Hour</li><li>7:00 PM - 11:00 PM: Reception</li></ul>",
+    "faq-parking-question": "Is there parking available at the wedding venue?",
+    "faq-parking-answer": "Yes, the venue has parking available.",
+    "faq-meal-question": "What type of food and drink will be served during the cocktail hour and reception?",
+    "faq-meal-answer": "We will begin the evening with passed hors d'oeuvres during cocktail hour, followed by a plated first course, an entree and a dessert. You will have the option to select your meal preference at the wedding.",
+    "faq-dietary-restrictions-question": "I have dietary restrictions/allergies. What's the best way to let you know?",
+    "faq-dietary-restrictions-answer": "When you RSVP, please select 'yes' to the question about diet accommodations and fill out more information.",
+    "faq-bar-question": "Will there be an open bar?",
+    "faq-bar-answer": "Yes! However, the venue does not allow anyone to bring outside food, drinks or have shots.",
+    "faq-room-block-question": "Have you booked hotel room blocks for guests?",
+    "faq-room-block-answer": "We understand that many of our guests will be traveling from out of town to join us on our special day. To ensure your comfort and convenience, we have reserved a hotel block at Diamond Mills Hotel. Please see the 'Travel' section.",
+    "faq-rsvp-method-question": "What's the best way to RSVP?",
+    "faq-rsvp-method-answer": "On the invitation, please scan the QR code and fill out our form.",
+    "faq-rsvp-deadline-question": "When is the RSVP deadline?",
+    "faq-rsvp-deadline-answer": "Please RSVP by April 10th, 2024.",
+    "faq-virtual-option-question": "I can't attend the wedding in person. Will there be a virtual wedding celebration?",
+    "faq-virtual-option-answer": "TODO",
+    "faq-updates-question": "How will you communicate any updated information and/or changes before the wedding?",
+    "faq-updates-answer": "All up to date information will be available on our website, and if there are any important changes we will email and text everyone.",
+    "faq-contact-info-question": "What's the best way to contact you if I have additional questions?",
+    "faq-contact-info-answer": "Feel free to email us via <a>oandjwedding2024@gmail.com</a>."
+  }
 }
