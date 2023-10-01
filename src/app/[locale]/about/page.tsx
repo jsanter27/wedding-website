@@ -115,7 +115,12 @@ export default function About() {
                   name={person.name}
                   role={person.role}
                   bio={person.bio}
-                  color={i % 2 == 0 ? 'palette-6' : 'palette-4'}
+                  bgColor={i % 2 == 0 ? 'bg-palette-6' : 'bg-palette-4'}
+                  textColor={
+                    i % 2 == 0
+                      ? 'text-palette-6-darker'
+                      : 'text-palette-4-darker'
+                  }
                 />
               ))}
             </div>

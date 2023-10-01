@@ -67,7 +67,7 @@ export default function Faq() {
         a: (chunks) => (
           <a
             href="mailto: oandjwedding2024@gmail.com"
-            className="font-bold hover:text-palette-7-darker text-palette-7-lighter"
+            className="hover:brightness-75 text-palette-7-darker"
           >
             {chunks}
           </a>

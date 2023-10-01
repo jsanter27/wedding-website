@@ -48,6 +48,24 @@
     "marianaName": "Mariana Heleta",
     "marianaBio": "Mariana is the niece of the bride. She is always down to get bubble tea and play video games, and enjoys going to the movies with Olga and Justin. Mariana also holds the family record for fish caught in a day!"
   },
+  "Travel": {
+    "pageHeader": "Travel Info",
+    "pageDescription": "We are thrilled that you'll be joining us to celebrate our special day! Whether you're traveling from near or far, we want to ensure that your journey to our wedding is as smooth as possible. Below, you'll find all the essential travel information to help you plan your trip.",
+    "venueHeader": "Venue",
+    "venueAddress": "<line>Diamond Mills Hotel Ballroom</line><line>25 S Partition St, Saugerties, NY 12477</line>",
+    "venuePhone": "(845) 247-0700",
+    "accommodationsHeader": "Accommodations",
+    "accommodationsDescription": "We have secured a block of rooms at Diamond Mills Hotel located near the wedding venue. You can enjoy a special rate by mentioning our names when booking your reservation. Please book your accommodations early to secure your room.",
+    "parkingHeader": "Parking",
+    "parkingDescription": "Ample parking is available at the wedding venue for those who prefer to drive.",
+    "attractionsHeader": "Local Attractions",
+    "attractionsDescription": "While you're in town, we encourage you to explore the local attractions and make the most of your visit. Saugerties, New York, is a charming town in the Hudson Valley region. Here are some of the popular attractions and activities near Diamond Mills Hotel:",
+    "saugertiesLighthouse": "Saugerties Lighthouse",
+    "opus40": "Opus 40",
+    "hudsonRiverCruises": "Hudson River Cruises",
+    "saugertiesAntiqueCenter": "Saugerties Antique Center",
+    "catskillMountains": "Catskill Mountains"
+  },
   "FAQ": {
     "frequently-asked-questions": "Frequently Asked Questions",
     "faq-arrival-time-question": "What time should I arrive at the ceremony?",

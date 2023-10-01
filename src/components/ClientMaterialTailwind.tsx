@@ -1,4 +1,4 @@
 'use client';
-import { Typography } from '@material-tailwind/react';
+import { Typography, List, ListItem } from '@material-tailwind/react';
 
-export { Typography };
+export { Typography, List, ListItem };

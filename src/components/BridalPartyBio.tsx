@@ -7,7 +7,8 @@ export type BridalPartyBioParams = {
   role: string;
   bio: string;
   image: string;
-  color: 'palette-4' | 'palette-6';
+  bgColor: string;
+  textColor: string;
 };
 
 export default function BridalPartyBio({
@@ -15,27 +16,28 @@ export default function BridalPartyBio({
   role,
   bio,
   image,
-  color,
+  bgColor,
+  textColor,
 }: BridalPartyBioParams) {
   return (
-    <div className={`flex flex-col items-center mb-10 text-${color}-darker`}>
+    <div className={`${textColor} flex flex-col items-center mb-10`}>
       <div
-        className={`flex justify-center items-center bg-${color} h-[385px] w-[385px] rounded-full`}
+        className={`${bgColor} flex justify-center items-center h-[300px] w-[300px] rounded-full`}
       >
         <Image
           className="rounded-full"
           alt={name}
           src={`/${image}`}
-          width="360"
-          height="360"
+          width="280"
+          height="280"
         />
       </div>
-      <Typography className="mt-2 font-bold text-center" variant="medium">
+      <Typography className="mt-2 font-bold text-center bg-transparent">
         {name}
         <br />
         {role}
       </Typography>
-      <Typography>{bio}</Typography>
+      <Typography className="bg-transparent">{bio}</Typography>
     </div>
   );
 }
