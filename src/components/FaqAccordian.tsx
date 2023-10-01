@@ -5,7 +5,6 @@ import {
   AccordionHeader,
   AccordionBody,
 } from '@material-tailwind/react';
-import PageCard from './PageCard';
 import { Typography } from './ClientMaterialTailwind';
 
 export type FaqAccordianItems = Array<{
@@ -27,7 +26,7 @@ export default function FaqAccordian({
   };
 
   return (
-    <PageCard>
+    <div>
       <Typography variant="h2" className="mb-3">
         {heading}
       </Typography>
@@ -50,6 +49,6 @@ export default function FaqAccordian({
           </Accordion>
         ))}
       </div>
-    </PageCard>
+    </div>
   );
 }

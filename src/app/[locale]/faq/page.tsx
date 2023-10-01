@@ -1,5 +1,6 @@
 import { useTranslations } from 'next-intl';
 import FaqAccordian, { FaqAccordianItems } from '@/components/FaqAccordian';
+import PageCard from '@/components/PageCard';
 
 export default function Faq() {
   const t = useTranslations('FAQ');
@@ -76,8 +77,10 @@ export default function Faq() {
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center flex-grow h-full text-center">
-      <FaqAccordian items={items} heading={t('frequently-asked-questions')} />
-    </div>
+    <PageCard>
+      <div className="flex flex-col items-center justify-center flex-grow h-full text-center">
+        <FaqAccordian items={items} heading={t('frequently-asked-questions')} />
+      </div>
+    </PageCard>
   );
 }
