@@ -77,10 +77,10 @@ export default function Faq() {
   ];
 
   return (
-    <PageCard>
-      <div className="flex flex-col items-center justify-center flex-grow h-full text-center">
+    <div className="flex flex-col items-center justify-center flex-grow h-full text-center">
+      <PageCard>
         <FaqAccordian items={items} heading={t('frequently-asked-questions')} />
-      </div>
-    </PageCard>
+      </PageCard>
+    </div>
   );
 }

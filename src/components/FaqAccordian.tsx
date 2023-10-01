@@ -26,7 +26,7 @@ export default function FaqAccordian({
   };
 
   return (
-    <div>
+    <>
       <Typography variant="h2" className="mb-3">
         {heading}
       </Typography>
@@ -49,6 +49,6 @@ export default function FaqAccordian({
           </Accordion>
         ))}
       </div>
-    </div>
+    </>
   );
 }

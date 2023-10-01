@@ -1,5 +1,6 @@
 import PageCard from '@/components/PageCard';
-import { Typography } from '@material-tailwind/react';
+import { Typography } from '@/components/ClientMaterialTailwind';
+import BridalPartyBio from '@/components/BridalPartyBio';
 import { useTranslations } from 'next-intl';
 
 export default function About() {
@@ -89,19 +90,37 @@ export default function About() {
   return (
     <div className="flex flex-col items-center justify-center flex-grow h-full text-center">
       <PageCard>
-        <BrideAndGroomBio header={t('ourStory')} story={t('story')} />
-        <Typography variant="h2" className="mb-3">
-          {t('ourStory')}
-        </Typography>
-        {bridalParty.map((person, i) => (
-          <BridalPartyBio
-            key={i}
-            image={person.image}
-            name={person.name}
-            role={person.role}
-            bio={person.bio}
-          />
-        ))}
+        <div className="overflow-auto">
+          <div className="mb-10">
+            <Typography variant="h2" className="mb-3">
+              {t('ourStory')}
+            </Typography>
+            {t.rich('story', {
+              line: (chunks) => (
+                <Typography className="mb-3 text-palette-5-darker">
+                  {chunks}
+                </Typography>
+              ),
+            })}
+          </div>
+          <div>
+            <Typography variant="h3" className="mb-3">
+              {t('bridalParty')}
+            </Typography>
+            <div className="flex flex-col items-center justify-center flex-grow h-full text-center">
+              {bridalParty.map((person, i) => (
+                <BridalPartyBio
+                  key={i}
+                  image={person.image}
+                  name={person.name}
+                  role={person.role}
+                  bio={person.bio}
+                  color={i % 2 == 0 ? 'palette-6' : 'palette-4'}
+                />
+              ))}
+            </div>
+          </div>
+        </div>
       </PageCard>
     </div>
   );
