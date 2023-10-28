@@ -30,8 +30,8 @@ module.exports = withMT({
   theme: {
     extend: {
       backgroundImage: {
-        tall: 'linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.9)), url("~/public/bg-vertical.jpg");',
-        wide: 'linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.9)), url("~/public/bg-horizontal.jpg");',
+        tall: 'linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.4)), url("~/public/bg-vertical.jpg");',
+        wide: 'linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.4)), url("~/public/bg-horizontal.jpg");',
       },
       container: {
         center: true,

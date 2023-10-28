@@ -17,13 +17,13 @@ export default function About() {
       name: t('michaelName'),
       role: t('bestMan'),
       bio: t('michaelBio'),
-      image: 'placeholder.jpg',
+      image: 'michael.jpg',
     },
     {
       name: t('roxyName'),
       role: t('bridesmaid'),
       bio: t('roxyBio'),
-      image: 'placeholder.jpg',
+      image: 'roksolana.jpg',
     },
     {
       name: t('ginoName'),
@@ -35,7 +35,7 @@ export default function About() {
       name: t('evelynName'),
       role: t('bridesmaid'),
       bio: t('evelynBio'),
-      image: 'placeholder.jpg',
+      image: 'evelyn.jpg',
     },
     {
       name: t('joshName'),
@@ -47,7 +47,7 @@ export default function About() {
       name: t('catherineName'),
       role: t('bridesmaid'),
       bio: t('catherineBio'),
-      image: 'placeholder.jpg',
+      image: 'catherine.jpg',
     },
     {
       name: t('zakharName'),
@@ -71,7 +71,7 @@ export default function About() {
       name: t('jennaName'),
       role: t('bridesmaid'),
       bio: t('jennaBio'),
-      image: 'placeholder.jpg',
+      image: 'jenna.jpg',
     },
     {
       name: t('andrewName'),

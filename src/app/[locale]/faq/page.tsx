@@ -54,10 +54,6 @@ export default function Faq() {
       body: t('faq-rsvp-deadline-answer'),
     },
     {
-      header: t('faq-virtual-option-question'),
-      body: t('faq-virtual-option-answer'),
-    },
-    {
       header: t('faq-updates-question'),
       body: t('faq-updates-answer'),
     },

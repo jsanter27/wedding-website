@@ -31,14 +31,14 @@ export default function LocaleLayout({
       text: t('aboutUs'),
       link: '/about',
     },
-    {
+    /* {
       text: t('itinerary'),
       link: '/itinerary',
     },
     {
       text: t('rsvp'),
       link: '/rsvp',
-    },
+    }, */
     {
       text: t('travel'),
       link: '/travel',
@@ -51,7 +51,7 @@ export default function LocaleLayout({
 
   return (
     <html className="h-full" lang={locale}>
-      <body className="h-full bg-center bg-no-repeat bg-cover bg-tall md:bg-wide">
+      <body className="h-full bg-center bg-no-repeat bg-cover bg-tall lg:bg-wide">
         <Navbar items={items} />
         <div className="container h-full">{children}</div>
       </body>

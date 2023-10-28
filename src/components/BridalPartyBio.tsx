@@ -22,14 +22,14 @@ export default function BridalPartyBio({
   return (
     <div className={`${textColor} flex flex-col items-center mb-10`}>
       <div
-        className={`${bgColor} flex justify-center items-center h-[300px] w-[300px] rounded-full`}
+        className={`${bgColor} flex justify-center items-center h-[280px] w-[280px] rounded-full`}
       >
         <Image
           className="rounded-full"
           alt={name}
           src={`/${image}`}
-          width="280"
-          height="280"
+          width="260"
+          height="260"
         />
       </div>
       <Typography className="mt-2 font-bold text-center bg-transparent">
