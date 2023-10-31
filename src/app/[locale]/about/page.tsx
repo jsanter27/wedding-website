@@ -45,7 +45,7 @@ export default function About() {
     },
     {
       name: t('catherineName'),
-      role: t('bridesmaid'),
+      role: `${t('bridesmaid')}-${t('officiant')}`,
       bio: t('catherineBio'),
       image: 'catherine.jpg',
     },
@@ -59,7 +59,7 @@ export default function About() {
       name: t('saraName'),
       role: t('bridesmaid'),
       bio: t('saraBio'),
-      image: 'placeholder.jpg',
+      image: 'sara.jpg',
     },
     {
       name: t('mattName'),

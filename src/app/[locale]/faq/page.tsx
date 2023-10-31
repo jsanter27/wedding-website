@@ -19,13 +19,6 @@ export default function Faq() {
       body: t('faq-indoors-outdoors-answer'),
     },
     {
-      header: t('faq-timeline-question'),
-      body: t.rich('faq-timeline-answer', {
-        ul: (chunks) => <ul>{chunks}</ul>,
-        li: (chunks) => <li>{chunks}</li>,
-      }),
-    },
-    {
       header: t('faq-parking-question'),
       body: t('faq-parking-answer'),
     },

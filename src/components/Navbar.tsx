@@ -27,6 +27,7 @@ export default function Navbar({ items }: { items: NavItems }) {
           key={`nav-item-${idx}`}
           href={item.link}
           className="hover:text-palette-1-darker"
+          onClick={() => setOpen(false)}
         >
           <Typography as="li" variant="lead" className="flex items-center">
             {item.text}
