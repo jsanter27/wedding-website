@@ -8,5 +8,8 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "css.lint.unknownAtRules": "ignore",
   "editor.wordWrap": "wordWrapColumn",
-  "editor.wordWrapColumn": 80
+  "editor.wordWrapColumn": 80,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
